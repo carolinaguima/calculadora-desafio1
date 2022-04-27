@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Configuração padrão de inicialização do html-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="style.css"/> <!--Link que direciona para o código CSS-->
+    <title>Calculadora Carolina - Cripto Dev</title>
+</head>
+
+<body>
+
+    <div class="topo">
+        <h1>Carolina Guimarães - Desafio 1</h1>
+        <div class="main">
+            <!--Inicialização da calculadora-->
+            <form action="" name="Calcular">
+                
+                <!--Primeiro bloco: display-->
+                <input type="text" class="text maincolor" name="text1" disabled><br>
+
+                <!--Início dos botões para a calculadora-->
+
+                <!--Segundo bloco: -->
+                <input type="button" class="num maincolor" name="opebtn" value="(" onclick="displaynum(opebtn.value)">
+                <input type="button" class="num maincolor" name="clobtn" value=")" onclick="displaynum(clobtn.value)">
+                <input type="text" class="text1 blue" name="text12" value="C" onclick="location.reload()"><br>
+                
+                <!--Terceiro bloco: primeira linha numerações (dígitos 9,8,7) e botão de adição-->
+                <input type="button" class="num maincolor" name="btn9" value="9" onclick="displaynum(btn9.value)">
+                <input type="button" class="num maincolor" name="btn8" value="8" onclick="displaynum(btn8.value)">
+                <input type="button" class="num maincolor" name="btn7" value="7" onclick="displaynum(btn7.value)">
+                <input type="button" class="num blue" name="addbtn" value="+" onclick="displaynum(addbtn.value)"><br>
+
+                <!--Quarto bloco: segunda linha de numerações (dígitos 6,5,4) e botão de subtração-->
+                <input type="button" class="num maincolor" name="btn6" value="6" onclick="displaynum(btn6.value)">
+                <input type="button" class="num maincolor" name="btn5" value="5" onclick="displaynum(btn5.value)">
+                <input type="button" class="num maincolor" name="btn4" value="4" onclick="displaynum(btn4.value)">
+                <input type="button" class="num blue" name="subbtn" value="-" onclick="displaynum(subbtn.value)"><br>
+
+                <!--Quinto bloco: terceira linha de numerações (dígitos 3,2,1) e botão de multiplicação-->
+                <input type="button" class="num maincolor" name="btn3" value="3" onclick="displaynum(btn3.value)">
+                <input type="button" class="num maincolor" name="btn2" value="2" onclick="displaynum(btn2.value)">
+                <input type="button" class="num maincolor" name="btn1" value="1" onclick="displaynum(btn1.value)">
+                <input type="button" class="num blue" name="mulbtn" value="*" onclick="displaynum(mulbtn.value)"><br>
+
+                <!--Sexto bloco: quarta linha com botão "ponto" para números reais com vírugula
+                botão de divisão e última numeração (dígito 0)-->
+                <input type="button" class="num maincolor" name="dot" value="." onclick="displaynum(dot.value)">
+                <input type="button" class="num maincolor" name="btn0" value="0" onclick="displaynum(btn0.value)">
+                <input type="button" class="num blue" name="eqlbtn" value="=" onclick="text1.value=eval(text1.value)">
+                <input type="button" class="num blue" name="divbtn" value="/" onclick="displaynum(divbtn.value)"><br>
+            </form>
+        </div>
+
+    </div> 
+
+</body>
+
+<!--Direcionar para código em JavaScript-->
+<script src="script.js"></script>
+
+</html>
